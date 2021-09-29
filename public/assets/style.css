@@ -147,12 +147,7 @@ h3{
     .todo-list-item div {
     flex-grow: 2;
     }
-    .todo-list-item .edit {
-    color : rgb(143, 233, 58);
-    margin-right: 10px;
-    cursor:pointer;
-    text-decoration: none;
-    }
+    
     .todo-list-item .remove {
     color : rgb(243, 96, 96);
     margin-right: 5px;
