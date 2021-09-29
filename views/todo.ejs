@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do_App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nosifer|Birthstone&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>To-Do List</h1>
+      <h3>A place to track your works and be make your day aewsome!!!</h3>
+      <div class="todo">
+        <form action="/" method="POST" class="todo-header">
+          <input type="text" name="content" />
+          <!-- <button type="submit"><span class="fas fa-plus"></span></button> -->
+          <button type="submit" class="submit" >Add task</button>
+        </form>
+        <ul class="todo-list">
+            <% todoTasks.forEach(details => { %>
+            <li class="todo-list-item">
+            <div class="todo-list-item-name"><%= details.content %></div>
+            <a href="/edit/<%= details._id %>" class="edit">
+            <span class="fas fa-edit"></span>
+            </a>
+            <a href="/remove/<%= details._id %>" class="remove">
+            <span class="fas fa-times"></span>
+            </a>
+            </li>
+            <% }) %>
+            </ul>
+      </div>
+    </div>
+  </body>
+  <!-- <script src="/assets/todo-list.js"> -->
+  <!-- </script> -->
+</html>
