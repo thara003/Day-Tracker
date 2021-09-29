@@ -54,22 +54,7 @@ h3{
       clear: both;
   }
  
-  /* button{
-    position: fixed;
-    left: 700px; 
-    cursor: pointer;
-    
-    
-  }
-  button.delete{
-      background-color: transparent;
-      border: transparent;
-      font-size: 20px;
-  }
-  button.delete:hover{
-      font-size: 25px;
-      color: red;
-  } */
+ 
   .todo-header input {
     width: 83%;
     border: none;
